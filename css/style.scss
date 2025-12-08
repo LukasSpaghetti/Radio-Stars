@@ -1,0 +1,61 @@
+// import font Stick No Bills
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap');
+
+// import font Inner Tight
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+// reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// nav
+body{
+    background-color: #fff8f1;
+    main{
+        nav{
+            background-color: #3a1700;
+            font-size: 1.5rem;
+            font-family: "Inner Tight", sans-serif;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5vh;
+            img{
+                width: 15%;
+            }
+            ul{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 50%;
+                li{
+                    list-style-type: none;
+                    a{
+                        color: #fff;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//// page formulaire
+main{
+    .formContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        form{
+            width: 80%;
+            margin: 5vh 0;
+            background-color: #a0784f;
+            padding: 2vh;
+            fieldset{
+                border: .2vh solid #000;
+            }
+        }
+    }
+}

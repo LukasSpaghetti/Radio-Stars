@@ -1,0 +1,34 @@
+const artistWhiteBGs = document.querySelectorAll(".artistWhiteBG");
+
+
+for (const artistWhiteBG of artistWhiteBGs){
+    artistWhiteBG.addEventListener("mouseover", () => {
+        artistWhiteBG.style.backgroundColor = "#00B0B6";
+        artistWhiteBG.style.color = "#fff";
+        artistWhiteBG.querySelector("h3").style.color = "#fff";
+        artistWhiteBG.querySelector("p").style.color = "#fff"
+    })
+    artistWhiteBG.addEventListener("mouseout", () => {
+        artistWhiteBG.style.backgroundColor = "#fff";
+        artistWhiteBG.style.color = "#000";
+        artistWhiteBG.querySelector("h3").style.color = "#00B0B6";
+        artistWhiteBG.querySelector("p").style.color = "#000"
+    }
+)}
+
+const artistTealBGs = document.querySelectorAll(".artistTealBG");
+
+for (const artistTealBG of artistTealBGs){
+    artistTealBG.addEventListener("mouseover", () => {
+        artistTealBG.style.backgroundColor = "#fff";
+        artistTealBG.style.color = "#ff0000ff";
+        artistTealBG.querySelector("h3").style.color = "#00B0B6";
+        artistTealBG.querySelector("p").style.color = "#000"
+    })
+    artistTealBG.addEventListener("mouseout", () => {
+        artistTealBG.style.backgroundColor = "#00B0B6";
+        artistTealBG.style.color = "#ff0000ff";
+        artistTealBG.querySelector("h3").style.color = "#fff";
+        artistTealBG.querySelector("p").style.color = "#fff"
+    }
+)}

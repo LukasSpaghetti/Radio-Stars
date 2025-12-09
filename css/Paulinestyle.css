@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFDDF0;
+}
+body main header {
+  background-image: url(../PaulineImg/CouvKpop.jpg);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+body main header h1 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 7rem;
+  font-weight: 600;
+  text-align: center;
+  color: #540146;
+  padding: 15vh 0;
+}
+body main .kpopA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 10vh 5vw;
+  background-color: aqua;
+  gap: 5vw;
+}
+body main .kpopA article {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+body main .kpopA article aside {
+  width: 30%;
+}
+body main .kpopA article aside img {
+  width: 100%;
+  border-radius: 40px;
+}
+body main .kpopA article p {
+  border: #540146 2px solid;
+  padding: 0 2vw;
+  border-radius: 40px;
+  width: 60vW;
+}
+body main .footerContainer {
+  background-color: #540146;
+}
+body main .footerContainer .botNav {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 0;
+  color: #FFDDF0;
+}
+body main .footerContainer .botNav a {
+  color: #FFDDF0;
+  text-decoration: none;
+}
+body main .footerContainer .botNav .botNavContainer {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+body main .footerContainer .botNav .botNavContainer h6 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 1.5rem;
+}
+body main .footerContainer .botNav .botNavContainer p, body main .footerContainer .botNav .botNavContainer a {
+  font-family: "Inner Tight", sans-serif;
+}
+body main .footerContainer .botNav .botNavContainer .programme {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 30%;
+}
+body main .footerContainer .botNav .botNavContainer .programme ul li {
+  list-style-type: none;
+}
+body main .footerContainer .botNav .botNavContainer .programme ul li:hover {
+  text-decoration: underline;
+}
+body main .footerContainer .botNav .botNavContainer .doubleElements {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body main .footerContainer .botNav .botNavContainer .doubleElements .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body main .footerContainer .botNav .botNavContainer .doubleElements .adress {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body main .footerContainer .botNav .botNavContainer .socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body main .footerContainer .botNav .botNavContainer .socials .socialsIcons {
+  display: flex;
+  gap: 1rem;
+}
+body main .footerContainer .botNav .botNavContainer .socials .socialsIcons svg {
+  cursor: pointer;
+}
+body main .footerContainer .copyright {
+  color: #FFDDF0;
+  display: flex;
+  justify-content: center;
+  font-family: "Inner Tight", sans-serif;
+  gap: 0.5rem;
+  padding: 2vh;
+}
+body main .footerContainer .copyright a {
+  color: #FFDDF0;
+}/*# sourceMappingURL=Paulinestyle.css.map */

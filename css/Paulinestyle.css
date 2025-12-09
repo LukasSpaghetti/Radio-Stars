@@ -6,8 +6,37 @@
   box-sizing: border-box;
 }
 
+h3 {
+  padding-bottom: 2vh;
+}
+
 body {
   background-color: #FFDDF0;
+  font-family: "Inner Tight", sans-serif;
+}
+body main .topNav {
+  background-color: #540146;
+  font-size: 1.5rem;
+  font-family: "Inner Tight", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5vh;
+}
+body main .topNav img {
+  width: 15%;
+}
+body main .topNav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+body main .topNav ul li {
+  list-style-type: none;
+}
+body main .topNav ul li a {
+  color: #FFDDF0;
+  text-decoration: none;
 }
 body main header {
   background-image: url(../PaulineImg/CouvKpop.jpg);
@@ -29,7 +58,6 @@ body main .kpopA {
   align-items: center;
   flex-direction: row;
   padding: 10vh 5vw;
-  background-color: aqua;
   gap: 5vw;
 }
 body main .kpopA article {
@@ -38,7 +66,8 @@ body main .kpopA article {
   flex-direction: row;
 }
 body main .kpopA article aside {
-  width: 30%;
+  margin-right: 2vw;
+  width: 40%;
 }
 body main .kpopA article aside img {
   width: 100%;
@@ -46,9 +75,92 @@ body main .kpopA article aside img {
 }
 body main .kpopA article p {
   border: #540146 2px solid;
-  padding: 0 2vw;
+  color: #540146;
+  padding: 2vw;
   border-radius: 40px;
-  width: 60vW;
+  width: 60vw;
+}
+body main h2 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  color: #FFDDF0;
+  background-color: #540146;
+  padding: 3vh 0;
+}
+body main .artiste .blackpink {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 10vh 5vw;
+  font-size: 1.2rem;
+}
+body main .artiste .blackpink aside {
+  width: 45%;
+}
+body main .artiste .blackpink aside img {
+  width: 100%;
+  border-radius: 40px;
+}
+body main .fifty {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  padding: 10vh 5vw;
+  font-size: 1.2rem;
+}
+body main .fifty aside {
+  width: 45%;
+}
+body main .fifty aside img {
+  width: 100%;
+  border-radius: 40px;
+}
+body main .texteNote {
+  color: #540146;
+  padding: 2vw;
+  width: 50vw;
+}
+body main .texteNote .textA {
+  padding-bottom: 15vh;
+}
+body main .texteNote .textA h3 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+body main .texteNote .note input {
+  color: #540146;
+  background-color: #FFDDF0;
+  width: 4vw;
+  height: 4vh;
+  text-align: center;
+  border: #540146 2px solid;
+  border-radius: 1vh;
+}
+body main .texteNote .note input::-moz-placeholder {
+  color: #540146;
+  font-family: "Inner Tight", sans-serif;
+}
+body main .texteNote .note input::placeholder {
+  color: #540146;
+  font-family: "Inner Tight", sans-serif;
+}
+body main .texteNote .note input:focus {
+  border: #540146 2px solid;
+  border-radius: 1vh;
+  outline: none;
+}
+body main .mv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10vh;
+}
+body main .mv video {
+  width: 80%;
+  border-radius: 5vh;
 }
 body main .footerContainer {
   background-color: #540146;

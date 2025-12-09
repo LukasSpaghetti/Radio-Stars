@@ -93,6 +93,7 @@ body main .formContainer .radioForm fieldset .infos .firstPartInfos {
 body main .formContainer .radioForm fieldset .infos .firstPartInfos .programmePref input {
   width: 5%;
   height: 3vh;
+  accent-color: #b69776;
 }
 body main .formContainer .radioForm fieldset .infos .secondPartInfos {
   display: flex;

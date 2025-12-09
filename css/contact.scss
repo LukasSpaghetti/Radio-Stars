@@ -75,7 +75,6 @@ body{
                             gap: 1rem;
                             input{
                                 padding: 1rem;
-                                width: 100%;
                                 color: #b69776;
                                 border: none;
                                 border-radius: 2rem;
@@ -100,12 +99,15 @@ body{
                             display: flex;
                             flex-direction: column;
                             gap: 2rem;
+                            width: 50%;
                             textarea{
                                 border-radius: 2rem;
                                 color: #b69776;
                                 padding: 1rem;
                                 font-family: "Inner Tight", sans-serif;
                                 font-size: 1.5rem;
+                                height: 30vh;
+                                width: 100%;
                                 &::placeholder{
                                     color: #b69776;
                                 }

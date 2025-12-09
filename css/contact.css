@@ -74,7 +74,6 @@ body main .formContainer .radioForm fieldset .infos p {
 }
 body main .formContainer .radioForm fieldset .infos p input {
   padding: 1rem;
-  width: 100%;
   color: #b69776;
   border: none;
   border-radius: 2rem;
@@ -99,6 +98,7 @@ body main .formContainer .radioForm fieldset .infos .secondPartInfos {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 50%;
 }
 body main .formContainer .radioForm fieldset .infos .secondPartInfos textarea {
   border-radius: 2rem;
@@ -106,6 +106,8 @@ body main .formContainer .radioForm fieldset .infos .secondPartInfos textarea {
   padding: 1rem;
   font-family: "Inner Tight", sans-serif;
   font-size: 1.5rem;
+  height: 30vh;
+  width: 100%;
 }
 body main .formContainer .radioForm fieldset .infos .secondPartInfos textarea::-moz-placeholder {
   color: #b69776;

@@ -77,7 +77,7 @@ body {
         .descriptionContainer{
             background-color: #001952;
             margin: 5vh;
-            width: 95%;
+            width: 70%;
             text-align: center;
             padding: 3vh;
             border-radius: 100px;
@@ -99,18 +99,19 @@ body {
         stroke-width: 3px;
         }
     }
+
     // SECTION PNL
     .pnl {
         background-color: rgba(255, 255, 255, 0.6);
         margin: 5vh ;
-        width: 95%;
+        width: 70%;
         padding: 3vh;
         border-radius: 30px;
         border: 0.5vh solid #001952;
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 3vh;
+        margin: 10vh 30vh;
         .titre{
             display: flex;
             justify-content: center;
@@ -118,7 +119,7 @@ body {
                 background-color: #fff;
                 border: 0.4vh solid #001952;
                 border-radius: 8px;
-                padding: .7vh 3vh;
+                padding: .2vh 3vh;
                 color: #001952;
                 font-family: Stick No Bills;
                 font-size: 2.3rem;
@@ -142,16 +143,74 @@ body {
                 p{
                     color: #001952;
                     font-family: Inter Tight;
-                    font-size: 1.1rem;
+                    font-size: 1.5rem;
                     padding-top: 5vh;
                 }
             }
             img{
-                height: 420px;
+                height: 500px;
                 border-radius: 100px;
             }
         }
     }
     
+    // SECTION BILLIE EILISH
+        .billie {
+        background-color: rgba(255, 255, 255, 0.6);
+        margin: 5vh;
+        width: 70%;
+        padding: 3vh;
+        border-radius: 30px;
+        border: 0.5vh solid #001952;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+        margin: 10vh 30vh;
+        .titre {
+            display: flex;
+            justify-content: center;
+            h4 {
+                background-color: #fff;
+                border: 0.4vh solid #001952;
+                border-radius: 8px;
+                padding: .2vh 3vh;
+                color: #001952;
+                font-family: Stick No Bills;
+                font-size: 2.3rem;
+                width: 280px;
+                height: 50px;
+                text-align: center;
+                font-weight: 400;
+            }
+        }
+        .container {
+            display: flex;              
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 7vh;
+
+            .texte {
+                width: 60%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 3vh;
+
+                p {
+                    color: #001952;
+                    font-family: Inter Tight;
+                    font-size: 1.5rem;
+                    padding-top: 5vh;
+                }
+            }
+
+            img {
+               height: 500px;
+               border-radius: 100px;
+            }
+        }
+    }
 }
 

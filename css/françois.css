@@ -1,1 +1,25 @@
-/*# sourceMappingURL=françois.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Stick+No+Bills:wght@200..800&display=swap");
+topNav {
+  background-color: #00B0B6;
+  font-size: 1.5rem;
+  font-family: "Inner Tight", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5vh;
+}
+topNav img {
+  width: 15%;
+}
+topNav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+topNav ul li {
+  list-style-type: none;
+}
+topNav ul li a {
+  color: #fff;
+  text-decoration: none;
+}/*# sourceMappingURL=françois.css.map */

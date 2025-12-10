@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulaire</title>
     <link rel="stylesheet" href="css/contact.css">
     <script src="js/contact.js" defer></script>
 </head>
@@ -26,33 +26,33 @@
                         <div class="firstPartInfos">
                             <p>
                                 <label for="prenom">Votre prénom :</label>
-                                <input type="text" placeholder="Jean" name="prenom" required>
+                                <input type="text" placeholder="Jean" class="clearInput" name="prenom" id="prenom" required>
                             </p>
                             <p>
                                 <label for="nom">Votre nom :</label>
-                                <input type="text" placeholder="Dupont" name="nom" required>
+                                <input type="text" placeholder="Dupont" class="clearInput" name="nom" id="nom" required>
                             </p>
                             <p>
                                 <label for="email">Votre e-mail :</label>
-                                <input type="email" placeholder="jeandupont@quelquechose.fr" name="email" required>
+                                <input type="email" placeholder="jeandupont@quelquechose.fr" class="clearInput" name="email" id="email" required>
                             </p>
                             <div class="programmePref">
                                 <p>
                                     <label>Votre/Vos programme(s) préféré(s) :</label>
                                     <span>
-                                        <input type="checkbox" value="kpop" name="kpop">
+                                        <input type="checkbox" value="kpop" class="clearInput" name="kpop" id="kpop">
                                         <label for="kpop">KPOP</label>
                                     </span>
                                     <span>
-                                        <input type="checkbox" value="alternative" name="alternative">
+                                        <input type="checkbox" value="alternative" class="clearInput" name="alternative" id="alternative">
                                         <label for="alternative">Alternative/Indé</label>
                                     </span>
                                     <span>
-                                        <input type="checkbox" value="eclectique" name="eclectique">
+                                        <input type="checkbox" value="eclectique" class="clearInput" name="eclectique" id="eclectique">
                                         <label for="eclectique">Eclectique</label>
                                     </span>
                                     <span>
-                                        <input type="checkbox" value="grunge" name="grunge">
+                                        <input type="checkbox" value="grunge" class="clearInput" name="grunge" id="grunge">
                                         <label for="grunge">Grunge</label>
                                     </span>
                                 </p>
@@ -61,11 +61,11 @@
                         <div class="secondPartInfos">
                             <p>
                                 <label for="sujet">Le sujet de votre message :</label>
-                                <input type="sujet" placeholder="Une petite question" name="sujet" required>
+                                <input type="sujet" placeholder="Une petite question" class="clearInput" name="sujet" id="sujet" required>
                             </p>
                             <p>
                                 <label for="sujet">Votre message :</label>
-                                <textarea name="message" placeholder="Alors oui en fait voilà petite question..." id="message" required></textarea>
+                                <textarea name="message" placeholder="Alors oui en fait voilà petite question..." class="clearInput" id="message" required></textarea>
                             </p>
                             <p class="submit">
                                 <input type="submit" class="sendForm" value="Envoyer">

@@ -290,16 +290,6 @@ body .neighbourhood .container img {
   width: 35%;
   border-radius: 100px;
 }
-body .etoile {
-  display: flex;
-  justify-content: center;
-}
-body .etoile svg {
-  stroke: #FFFB86;
-  height: 5vh;
-  width: 5%;
-  stroke-width: 3px;
-}
 body .footerContainer {
   background-color: #001952;
 }

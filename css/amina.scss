@@ -89,16 +89,6 @@ body {
             }
         }
     }
-    .etoile{
-        display: flex;
-        justify-content: center;
-        svg{
-        stroke: #FFFB86;
-        height: 5vh;
-        width: 5%;
-        stroke-width: 3px;
-        }
-    }
 
     // SECTION PNL
     .pnl {
@@ -127,6 +117,7 @@ body {
                 height: 50px;
                 text-align: center;
                 font-weight: 400;
+                margin-bottom: 2vh;
             }
         }
         .container{
@@ -144,7 +135,7 @@ body {
                     color: #001952;
                     font-family: Inter Tight;
                     font-size: 1.5rem;
-                    padding-top: 5vh;
+                    // padding-top: 2vh;
                 }
             }
             img{
@@ -182,6 +173,7 @@ body {
                 height: 50px;
                 text-align: center;
                 font-weight: 400;
+                margin-bottom: 2vh;
             }
         }
         .container {
@@ -202,13 +194,219 @@ body {
                     color: #001952;
                     font-family: Inter Tight;
                     font-size: 1.5rem;
-                    padding-top: 5vh;
+                    // padding-top: 2vh;
                 }
             }
 
             img {
                height: 500px;
                border-radius: 100px;
+            }
+        }
+    }
+    // SECTION PLK
+   .plk{
+        background-color: rgba(255, 255, 255, 0.6);
+        margin: 5vh ;
+        width: 70%;
+        padding: 3vh;
+        border-radius: 30px;
+        border: 0.5vh solid #001952;
+        display: flex;
+        flex-direction: column;
+        gap: 3vh;
+        margin: 10vh 30vh;
+        .titre{
+            display: flex;
+            justify-content: center;
+            h4{
+                background-color: #fff;
+                border: 0.4vh solid #001952;
+                border-radius: 8px;
+                padding: .2vh 3vh;
+                color: #001952;
+                font-family: Stick No Bills;
+                font-size: 2.3rem;
+                width: 280px;
+                height: 50px;
+                text-align: center;
+                font-weight: 400;
+                margin-bottom: 2vh;
+            }
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 7vh;
+            .texte{
+                width: 60%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 3vh;
+                p{
+                    color: #001952;
+                    font-family: Inter Tight;
+                    font-size: 1.5rem;
+                    // padding-top: 2vh;
+                }
+            }
+            img{
+                height: 500px;
+                border-radius: 100px;
+            }
+        }
+    }
+    // SECTION THE NEIGHBOURHOOD
+    .neighbourhood{
+        background-color: rgba(255, 255, 255, 0.6);
+        margin: 5vh;
+        width: 70%;
+        padding: 3vh;
+        border-radius: 30px;
+        border: 0.5vh solid #001952;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3vh;
+        margin: 10vh 30vh;
+        .titre {
+            display: flex;
+            justify-content: center;
+            h4 {
+                background-color: #fff;
+                border: 0.4vh solid #001952;
+                border-radius: 8px;
+                padding: .2vh 7vh;
+                color: #001952;
+                font-family: Stick No Bills;
+                font-size: 2.3rem;
+                width: 420px;
+                height: 50px;
+                text-align: center;
+                font-weight: 400;
+                margin-bottom: 2vh;
+            }
+        }
+        .container {
+            display: flex;              
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 7vh;
+
+            .texte {
+                width: 60%;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                gap: 3vh;
+
+                p {
+                    color: #001952;
+                    font-family: Inter Tight;
+                    font-size: 1.5rem;
+                    // padding-top: 2vh;
+                }
+            }
+
+            img {
+               height: 600px;
+               width: 35%;
+               border-radius: 100px;
+            }
+        }
+    }
+    // SECTION ETOILE
+    .etoile{
+        display: flex;
+        justify-content: center;
+        svg{
+        stroke: #FFFB86;
+        height: 5vh;
+        width: 5%;
+        stroke-width: 3px;
+        }
+    }
+    // FOOTER
+    .footerContainer{
+            background-color: #001952;
+            .botNav{
+                margin-top: 10vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5vh 0;
+                color: #FBF7EF;
+                a{
+                    color: #FBF7EF;
+                    text-decoration: none;
+                }
+                .botNavContainer{
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    h6{
+                        font-family: "Stick No Bills", sans-serif;
+                        font-size: 1.5rem;
+                    }
+                    p, a{
+                        font-family: "Inner Tight", sans-serif;
+                    }
+                    .programme{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        width: 30%;
+                        ul{
+                            li{
+                                list-style-type: none;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+
+                            }
+                        }
+                    }
+                    .doubleElements{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        .contact{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                        }
+                        .adress{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                        }
+                    }
+                    .socials{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        .socialsIcons{
+                            display: flex;
+                            gap: 1rem;
+                            svg{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            .copyright{
+                color: #FBF7EF;
+                display: flex;
+                justify-content: center;
+                font-family: "Inner Tight", sans-serif;
+                gap: .5rem;
+                padding: 2vh;
+            a{
+             color: #FBF7EF;
             }
         }
     }

@@ -39,7 +39,7 @@ body main .topNav ul li a {
   text-decoration: none;
 }
 body main header {
-  background-image: url(../PaulineImg/CouvKpop.jpg);
+  background-image: url(../PaulineImg/blackpinkmodif3.jpg);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -49,7 +49,7 @@ body main header h1 {
   font-size: 7rem;
   font-weight: 600;
   text-align: center;
-  color: #540146;
+  color: #FFDDF0;
   padding: 15vh 0;
 }
 body main .kpopA {
@@ -157,10 +157,6 @@ body main .mv {
   justify-content: center;
   align-items: center;
   padding-bottom: 10vh;
-}
-body main .mv video {
-  width: 80%;
-  border-radius: 5vh;
 }
 body main .footerContainer {
   background-color: #540146;

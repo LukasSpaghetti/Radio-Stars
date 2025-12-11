@@ -135,7 +135,6 @@ body {
                     color: #001952;
                     font-family: Inter Tight;
                     font-size: 1.5rem;
-                    // padding-top: 2vh;
                 }
             }
             img{
@@ -194,7 +193,6 @@ body {
                     color: #001952;
                     font-family: Inter Tight;
                     font-size: 1.5rem;
-                    // padding-top: 2vh;
                 }
             }
 
@@ -204,6 +202,7 @@ body {
             }
         }
     }
+
     // SECTION PLK
    .plk{
         background-color: rgba(255, 255, 255, 0.6);
@@ -307,7 +306,6 @@ body {
                     color: #001952;
                     font-family: Inter Tight;
                     font-size: 1.5rem;
-                    // padding-top: 2vh;
                 }
             }
 
@@ -318,17 +316,26 @@ body {
             }
         }
     }
-    // SECTION ETOILE
-    // .etoile{
-    //     display: flex;
-    //     justify-content: center;
-    //     svg{
-    //     stroke: #FFFB86;
-    //     height: 5vh;
-    //     width: 5%;
-    //     stroke-width: 3px;
-    //     }
-    // }
+   #like-container {
+    text-align: center;
+    margin: 3vh 0;
+    #coeur {
+        font-size: 3rem;
+        color: red;
+        cursor: pointer;
+        transition: transform 0.2s, color 0.2s;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+    #like-text {
+        margin-top: 1vh;
+        font-size: 1.5rem;
+        color: #001952;
+        font-family: Inter Tight;
+    }
+}
+
     // FOOTER
     .footerContainer{
             background-color: #001952;
@@ -411,4 +418,3 @@ body {
         }
     }
 }
-

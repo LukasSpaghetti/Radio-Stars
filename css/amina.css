@@ -290,6 +290,25 @@ body .neighbourhood .container img {
   width: 35%;
   border-radius: 100px;
 }
+body #like-container {
+  text-align: center;
+  margin: 3vh 0;
+}
+body #like-container #coeur {
+  font-size: 3rem;
+  color: red;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+body #like-container #coeur:hover {
+  transform: scale(1.2);
+}
+body #like-container #like-text {
+  margin-top: 1vh;
+  font-size: 1.5rem;
+  color: #001952;
+  font-family: Inter Tight;
+}
 body .footerContainer {
   background-color: #001952;
 }

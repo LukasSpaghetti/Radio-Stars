@@ -1,18 +1,3 @@
-// const input = document.querySelector('input');
-// const noteR = document.querySelector('#noteRB');
-
-// // if(Number(input.value) === 2){
-// //     noteR.innerHTML = "Tu vas attirer la foudre des Blinks.";
-// // }
-
-// input.addEventListener("input", () => {
-//     if (input.value === "2") {
-        
-
-//         noteR.textContent = "Tu vas attirer la foudre des Blinks.";
-//     } 
-// });
-
 const input = document.querySelector('.bForm');
 const noteR = document.querySelector('#noteRB');
 
@@ -43,7 +28,6 @@ input.addEventListener("input", () => {
         noteR.textContent = "On bannit les Sasaeng ici ​​​​☠️​";
     }
 });
-
 
 const inputF = document.querySelector('.form');
 const note = document.querySelector('#note');
@@ -76,6 +60,15 @@ inputF.addEventListener("input", () => {
     }
 });
 
+///style hover border text
+const phover = document.querySelectorAll('.border');
 
+phover.forEach(elem => {
+    elem.addEventListener("mouseover", () => {
+        elem.classList.add("border");
+    });
 
-
+    elem.addEventListener("mouseout", () => {
+        elem.classList.remove("border");
+    });
+});

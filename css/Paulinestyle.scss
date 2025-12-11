@@ -65,6 +65,7 @@ body{
             flex-direction: row;
             padding: 10vh 5vw;
             gap: 5vw;
+            font-size: 1.2rem;
             article{
                 display: flex;
             justify-content: space-between;
@@ -171,18 +172,7 @@ body{
                 padding-bottom: 10vh;
             }
 
-
-
-
-
-
-
-
-
-
-
-
-
+//////////FOOTER
         .footerContainer{
             background-color: #540146;
             .botNav{
@@ -264,4 +254,13 @@ body{
             }
         }
     }
+}
+
+.border{
+    border: #540146 2px solid;
+    border-radius: 40px;
+    margin-right: 2vw;
+    // border: 3px solid transparent; /* bordure invisible pour garder la place */
+    // border-color: pink;
+    // transition: 0.2s;
 }

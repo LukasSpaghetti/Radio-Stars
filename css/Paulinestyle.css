@@ -59,6 +59,7 @@ body main .kpopA {
   flex-direction: row;
   padding: 10vh 5vw;
   gap: 5vw;
+  font-size: 1.2rem;
 }
 body main .kpopA article {
   display: flex;
@@ -234,4 +235,10 @@ body main .footerContainer .copyright {
 }
 body main .footerContainer .copyright a {
   color: #FFDDF0;
+}
+
+.border {
+  border: #540146 2px solid;
+  border-radius: 40px;
+  margin-right: 2vw;
 }/*# sourceMappingURL=Paulinestyle.css.map */

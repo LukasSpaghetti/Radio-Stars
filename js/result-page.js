@@ -39,7 +39,20 @@ isLiked(localStorage.getItem("alternative_data"), alternativespan)
 isLiked(localStorage.getItem("eclectique_data"), eclectiquespan)
 isLiked(localStorage.getItem("grunge_data"), grungespan)
 
+const toggle = document.getElementById("toggle");
+const navigation = document.getElementById("topNav");
 
+document.onclick = function(element) {
+    if(element.target.id !== "toggle" && element.target.id !== "navigation"){
+        toggle.classList.remove("active");
+        navigation.classList.remove("active");
+    }
+}
+
+toggle.onclick = function(){
+    toggle.classList.toggle("active");
+    navigation.classList.toggle("active");
+}
 
 
 // email.textContent += ` ${localStorage.getItem("email_data")}`

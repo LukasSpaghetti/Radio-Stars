@@ -53,6 +53,7 @@ body{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding: 5vh;
             .radioForm{
                 background-color: #402307;
                 color: #fff;
@@ -130,6 +131,13 @@ body{
                         }
                     }
                 }
+            }
+            .resultsPage{
+                color: #402307;
+                text-decoration: none;
+                font-family: "Inner Tight", sans-serif;
+                font-weight: 600;
+                font-size: 1.5rem;
             }
         }
     }

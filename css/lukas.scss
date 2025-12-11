@@ -15,7 +15,7 @@
 body{
     background-color: #DEF7FF;
     main{
-        .topNav{
+        #topNav{
             background-color: #00B0B6;
             font-size: 1.7rem;
             font-family: "Inner Tight", sans-serif;
@@ -247,6 +247,94 @@ body{
                 padding: 2vh;
                 a{
                     color: #fff;
+                }
+            }
+        }
+    }
+}
+
+////////////////////////////////////////
+
+@media screen and (max-width: 768px){
+    body{
+        main{
+            #toggle{
+                position: fixed;
+                display: block;
+                width: 5vh;
+                height: .6vh;
+                border-radius: 2vh;
+                top: 3vh;
+                right: 2vh;
+                cursor: pointer;
+                background-color: #00B0B6;
+                z-index: 999;
+                &:before, &:after{
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 5vh;
+                    height: .7vh;
+                    background-color: #00B0B6;
+                    border-radius: 2vh;
+                }
+                &:before{
+                    top: -1.2vh;
+                }
+                &:after{
+                    top: 1.2vh;
+                }
+            }
+            #toggle.active{
+                background-color: transparent;
+                &::before{
+                    transform: rotate(45deg);
+                    top: 0;
+                    background-color: #fff;
+                }
+                &::after{
+                    transform: rotate(-45deg);
+                    top: 0;
+                    background-color: #fff;
+                }
+            }
+            #topNav{
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                gap: 10vh;
+                justify-content: left;
+                right: -100%;
+                width: 100%;
+                height: 100vh;
+                transition: .5s all;
+                background-color: #00B0B6;
+                z-index: 998;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5vh;
+                    li{
+                        display: block;
+                        margin-bottom: 2vh;
+                        width: 100%;
+                        a{
+                            color: #fff;
+                            font-size: 1.5rem;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+            #topNav.active{
+                right: -70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+            }
+            .mainContainer{
+                article{
+                    width: 90%;
                 }
             }
         }

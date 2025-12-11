@@ -9,7 +9,7 @@
 body {
   background-color: #DEF7FF;
 }
-body main .topNav {
+body main #topNav {
   background-color: #00B0B6;
   font-size: 1.7rem;
   font-family: "Inner Tight", sans-serif;
@@ -17,26 +17,26 @@ body main .topNav {
   justify-content: space-between;
   padding: 0 5vh;
 }
-body main .topNav .backToMain {
+body main #topNav .backToMain {
   width: 15%;
 }
-body main .topNav .backToMain img {
+body main #topNav .backToMain img {
   width: 100%;
 }
-body main .topNav ul {
+body main #topNav ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 50%;
 }
-body main .topNav ul li {
+body main #topNav ul li {
   list-style-type: none;
 }
-body main .topNav ul li a {
+body main #topNav ul li a {
   color: #fff;
   text-decoration: none;
 }
-body main .topNav ul li a:hover {
+body main #topNav ul li a:hover {
   text-decoration: underline;
 }
 body main header {
@@ -238,4 +238,84 @@ body main .footerContainer .copyright {
 }
 body main .footerContainer .copyright a {
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  body main #toggle {
+    position: fixed;
+    display: block;
+    width: 5vh;
+    height: 0.6vh;
+    border-radius: 2vh;
+    top: 3vh;
+    right: 2vh;
+    cursor: pointer;
+    background-color: #00B0B6;
+    z-index: 999;
+  }
+  body main #toggle:before, body main #toggle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 5vh;
+    height: 0.7vh;
+    background-color: #00B0B6;
+    border-radius: 2vh;
+  }
+  body main #toggle:before {
+    top: -1.2vh;
+  }
+  body main #toggle:after {
+    top: 1.2vh;
+  }
+  body main #toggle.active {
+    background-color: transparent;
+  }
+  body main #toggle.active::before {
+    transform: rotate(45deg);
+    top: 0;
+    background-color: #fff;
+  }
+  body main #toggle.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    background-color: #fff;
+  }
+  body main #topNav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    justify-content: left;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s all;
+    background-color: #00B0B6;
+    z-index: 998;
+  }
+  body main #topNav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+  }
+  body main #topNav ul li {
+    display: block;
+    margin-bottom: 2vh;
+    width: 100%;
+  }
+  body main #topNav ul li a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  body main #topNav.active {
+    right: -70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  body main .mainContainer article {
+    width: 90%;
+  }
 }/*# sourceMappingURL=lukas.css.map */

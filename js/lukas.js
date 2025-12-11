@@ -55,7 +55,7 @@ let answerResponse = document.querySelector("#answerResponse")
 let response = document.querySelector('input');
 
 
-let getResponse = () => {
+const getResponse = () => {
     let yesOrNo = form.answer.value;
     console.log(yesOrNo)
     if (yesOrNo === "oui"){
@@ -63,12 +63,9 @@ let getResponse = () => {
         answerResponse.textContent = "Je suis honnêtement un peu surpris !"
     } else if (yesOrNo === "non"){
         answerResponse.textContent = "Un peu déçu mais pas si surprenant"
-        console.log(yesOrNo)
-        console.log("nan")
     } else{
         answerResponse.textContent = ""
-        console.log("zglourb")
     }
 }
 
-response.addEventListener('change', getResponse);
+form.addEventListener('change', getResponse);

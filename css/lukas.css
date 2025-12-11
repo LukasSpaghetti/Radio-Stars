@@ -194,6 +194,11 @@ body main .didYouKnow .answers .possibleChoices input {
   width: 2.5vh;
   height: 2.5vh;
 }
+body main .didYouKnow .answers #answerResponse {
+  font-family: "Inner Tight", sans-serif;
+  color: #fff;
+  font-size: 1.2rem;
+}
 body main .footerContainer {
   background-color: #00B0B6;
 }
@@ -408,6 +413,9 @@ body main .footerContainer .copyright a {
   body main .mainContainer .artists .artistTealBG .describeArtist h3, body main .mainContainer .artists .artistWhiteBG .describeArtist h3 {
     text-align: center;
     width: 100%;
+  }
+  body main .didYouKnow .answers {
+    width: 60%;
   }
   body main .footerContainer .botNav .botNavContainer {
     width: 80%;

@@ -197,6 +197,11 @@ body{
                         height: 2.5vh;
                     }
                 }
+                #answerResponse{
+                        font-family: "Inner Tight", sans-serif;
+                        color: #fff;
+                        font-size: 1.2rem;
+                    }
             }
         }
         .footerContainer{
@@ -430,6 +435,11 @@ body{
                             }
                         }
                     }
+                }
+            }
+            .didYouKnow{
+                .answers{
+                    width: 60%;
                 }
             }
             .footerContainer{

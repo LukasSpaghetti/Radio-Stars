@@ -47,3 +47,28 @@ toggle.onclick = function(){
     toggle.classList.toggle("active");
     navigation.classList.toggle("active");
 }
+
+let form = document.querySelector(".didYouKnow")
+
+let answerResponse = document.querySelector("#answerResponse")
+
+let response = document.querySelector('input');
+
+
+let getResponse = () => {
+    let yesOrNo = form.answer.value;
+    console.log(yesOrNo)
+    if (yesOrNo === "oui"){
+        console.log(yesOrNo)
+        answerResponse.textContent = "Je suis honnêtement un peu surpris !"
+    } else if (yesOrNo === "non"){
+        answerResponse.textContent = "Un peu déçu mais pas si surprenant"
+        console.log(yesOrNo)
+        console.log("nan")
+    } else{
+        answerResponse.textContent = ""
+        console.log("zglourb")
+    }
+}
+
+response.addEventListener('change', getResponse);

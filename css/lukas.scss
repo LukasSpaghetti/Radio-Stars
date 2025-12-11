@@ -103,7 +103,8 @@ body{
                     gap: 2rem;
                     transition: all .5s;
                     img{
-                        width: 25%;
+                        width: 30vh;
+                        height: 30vh;
                         border-radius: 1rem;
                     }
                     .describeArtist{
@@ -134,7 +135,8 @@ body{
                     gap: 2rem;
                     transition: all .5s;
                     img{
-                        width: 25%;
+                        width: 30vh;
+                        height: 100%;
                         border-radius: 1rem;
                     }
                     .describeArtist{
@@ -158,6 +160,41 @@ body{
                             text-align: right;
                             width: 80%;
                         }
+                    }
+                }
+            }
+        }
+        .didYouKnow{
+            background-color: #00B0B6;
+            width: 80%;
+            text-align: center;
+            padding: 5vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 2rem;
+            gap: 2vh;
+            h2{
+                color: #fff;
+                font-family: "Stick No Bills", sans-serif;
+                font-size: 2.5rem;
+            }
+            .answers{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                .possibleChoices{
+                    display: flex;
+                    justify-content: space-between;
+                    label{
+                        color: #fff;
+                        font-size: 1.5rem;
+                        font-family: "Inner Tight", sans-serif;
+                    }
+                    input{
+                        width: 2.5vh;
+                        height: 2.5vh;
                     }
                 }
             }
@@ -233,6 +270,8 @@ body{
                             gap: 1rem;
                             svg{
                                 cursor: pointer;
+                                width: 3vh;
+                                height: 3vh;
                             }
                         }
                     }
@@ -256,6 +295,10 @@ body{
 ////////////////////////////////////////
 
 @media screen and (max-width: 768px){
+    html{
+        font-size: 14px;
+    }
+
     body{
         main{
             #toggle{
@@ -310,10 +353,12 @@ body{
                 transition: .5s all;
                 background-color: #00B0B6;
                 z-index: 998;
+                padding: 0;
                 ul{
                     display: flex;
                     flex-direction: column;
                     gap: 5vh;
+                    margin: 0 5vh;
                     li{
                         display: block;
                         margin-bottom: 2vh;
@@ -325,6 +370,12 @@ body{
                         }
                     }
                 }
+                .backToMain{
+                    img{
+                        width: 20vh;
+                        margin: 0 3vh;
+                    }
+                }
             }
             #topNav.active{
                 right: -70%;
@@ -332,9 +383,108 @@ body{
                 flex-direction: column;
                 justify-content: left;
             }
+            header{
+                h1{
+                    font-size: 4.5rem;
+                }
+            }
+            .mainContainer{
+                article{
+                    width: 80%;
+                    background-image: url(../img/musique\ indée\ obscurcie.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    text-align: center;
+                    img{
+                        display: none;
+                    }
+                    .indieParagraph{
+                        align-items: center;
+                    }
+                }
+                .artists{
+                    width: 100vw;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .artistTealBG, .artistWhiteBG{
+                        width: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        padding: 10vh 5vh;
+                        img{
+                            width: 20vh;
+                            height: 20vh;
+                            align-self: center;
+                        }
+                        .describeArtist{
+                            align-items: center;
+                            p{
+                                width: 95%;
+                                text-align: center;
+                            }
+                            h3{
+                                text-align: center;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            .footerContainer{
+                .botNav{
+                    .botNavContainer{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px){
+    html{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    body{
+        main{
+            #topNav{
+                margin: 0 2vh;
+                right: -110%;
+                .backToMain{
+                    img{
+                        width: 15vh;
+                    }
+                }
+                ul{
+                    margin: 0 5vh;
+                }
+            }
+            #topNav.active{
+                right: -60%;
+            }
             .mainContainer{
                 article{
                     width: 90%;
+                }
+                .artists{
+                    .artistTealBG, .artistWhiteBG{
+                        width: 90%;
+                    }
+                }
+            }
+            .footerContainer{
+                .botNav{
+                    .botNavContainer{
+                        width: 70%;
+                        .programme{
+                            display: none;
+                        }
+                    }
                 }
             }
         }

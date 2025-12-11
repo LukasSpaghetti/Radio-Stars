@@ -118,7 +118,7 @@ body{
                             }
                             .submit{
                                 input{
-                                    background-color: #200d00;
+                                    background-color: #b69776;
                                     color: #fff;
                                     text-transform: uppercase;
                                     padding: 3vh 0;
@@ -269,7 +269,7 @@ body{
 
 @media screen and (max-width: 768px){
     html{
-        font-size: 14px;
+        font-size: 10px;
     }
 
     body{
@@ -283,7 +283,7 @@ body{
                 top: 3vh;
                 right: 2vh;
                 cursor: pointer;
-                background-color: #402307;
+                background-color: #b69776;
                 z-index: 999;
                 &:before, &:after{
                     content: "";
@@ -291,7 +291,7 @@ body{
                     display: block;
                     width: 5vh;
                     height: .7vh;
-                    background-color: #402307;
+                    background-color: #b69776;
                     border-radius: 2vh;
                 }
                 &:before{
@@ -323,6 +323,7 @@ body{
                 right: -100%;
                 width: 100%;
                 height: 100vh;
+                top: 0;
                 transition: .5s all;
                 background-color: #402307;
                 z-index: 998;
@@ -356,6 +357,41 @@ body{
                 flex-direction: column;
                 justify-content: left;
             }
+            .formContainer{
+                text-align: center;
+                .radioForm{
+                    fieldset{
+                        .infos{
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 3rem;
+                            .firstPartInfos{
+                                width: 60%;
+                                gap: 3rem;
+                                .programmePref{
+                                    p{
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        flex-direction: row;
+                                        gap: 3rem;
+                                        span{
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 1rem;
+                                            width: 45%;
+                                            input{
+                                                width: 2vh;
+                                                height: 2vh;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -383,6 +419,28 @@ body{
             }
             #topNav.active{
                 right: -60%;
+            }
+            .formContainer{
+                .radioForm{
+                    width: 90%;
+                    fieldset{
+                        .infos{
+                            .firstPartInfos{
+                                width: 80%;
+                                .programmePref{
+                                    p{
+                                        span{
+                                            width: 44%;
+                                        }
+                                    }
+                                }
+                            }
+                            .secondPartInfos{
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
             }
             .footerContainer{
                 .botNav{

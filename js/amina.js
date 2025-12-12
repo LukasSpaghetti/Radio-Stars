@@ -77,3 +77,18 @@ coeur.addEventListener("click", function() {
         alert("🎉 Félicitations ! Vous êtes la centième personne à liker cette page");
     }
 });
+
+const toggle = document.getElementById("toggle");
+const navigation = document.getElementById("topNav");
+
+document.onclick = function(element) {
+    if(element.target.id !== "toggle" && element.target.id !== "navigation"){
+        toggle.classList.remove("active");
+        navigation.classList.remove("active");
+    }
+}
+
+toggle.onclick = function(){
+    toggle.classList.toggle("active");
+    navigation.classList.toggle("active");
+}

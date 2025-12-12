@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.amina {
+  color: #001952;
+  accent-color: #001952;
+}
+
+.lukas {
+  color: #00B0B6;
+  accent-color: #00B0B6;
+}
+
+.pauline {
+  color: #540146;
+  accent-color: #540146;
+}
+
+.francois {
+  color: #000;
+  accent-color: #000;
+}
+
+body {
+  background-color: #FFF4DE;
+}
+body main #topNav {
+  background-color: #402307;
+  font-size: 1.7rem;
+  font-family: "Inner Tight", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5vh;
+}
+body main #topNav .backToMain {
+  width: 15%;
+}
+body main #topNav .backToMain img {
+  width: 100%;
+}
+body main #topNav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+body main #topNav ul li {
+  list-style-type: none;
+}
+body main #topNav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+body main #topNav ul li a:hover {
+  text-decoration: underline;
+}
+body main header {
+  background-image: url(../img/fondQuiz.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+}
+body main header h1 {
+  text-align: center;
+  padding: 10vh;
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 8rem;
+  font-weight: 600;
+  color: #402307;
+}
+body main .quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  gap: 3rem;
+}
+body main .quiz .question {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+  border: 0.2rem solid;
+  border-radius: 2rem;
+  font-family: "Inner Tight", sans-serif;
+}
+body main .quiz .question img {
+  width: 250px;
+  height: 300px;
+  border-radius: 2rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .quiz .question .questionText {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  font-size: 1.8rem;
+  width: 60%;
+  font-family: "Stick No Bills", sans-serif;
+  font-weight: 700;
+}
+body main .quiz .question .questionText .answers {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1.4rem;
+  font-family: "Inner Tight", sans-serif;
+  font-weight: 600;
+}
+body main .quiz .question .questionText .answers input {
+  width: 2vh;
+  height: 2vh;
+  outline: 10px;
+  mix-blend-mode: multiply;
+  box-shadow: none;
+}
+
+.footerContainer {
+  background-color: #402307;
+}
+.footerContainer .botNav {
+  margin-top: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 0;
+  color: #fff;
+}
+.footerContainer .botNav a {
+  color: #fff;
+  text-decoration: none;
+}
+.footerContainer .botNav .botNavContainer {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.footerContainer .botNav .botNavContainer h6 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 1.5rem;
+}
+.footerContainer .botNav .botNavContainer p, .footerContainer .botNav .botNavContainer a {
+  font-family: "Inner Tight", sans-serif;
+}
+.footerContainer .botNav .botNavContainer .programme {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 30%;
+}
+.footerContainer .botNav .botNavContainer .programme ul li {
+  list-style-type: none;
+}
+.footerContainer .botNav .botNavContainer .programme ul li:hover {
+  text-decoration: underline;
+}
+.footerContainer .botNav .botNavContainer .doubleElements {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footerContainer .botNav .botNavContainer .doubleElements .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footerContainer .botNav .botNavContainer .doubleElements .adress {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footerContainer .botNav .botNavContainer .socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.footerContainer .botNav .botNavContainer .socials .socialsIcons {
+  display: flex;
+  gap: 1rem;
+}
+.footerContainer .botNav .botNavContainer .socials .socialsIcons svg {
+  cursor: pointer;
+  width: 3vh;
+  height: 3vh;
+}
+.footerContainer .copyright {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-family: "Inner Tight", sans-serif;
+  gap: 0.5rem;
+  padding: 2vh;
+}
+.footerContainer .copyright a {
+  color: #fff;
+}/*# sourceMappingURL=quiz.css.map */

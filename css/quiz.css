@@ -73,61 +73,80 @@ body main header h1 {
   font-weight: 600;
   color: #402307;
 }
-body main .quiz {
+body main .quizSection {
+  font-family: "Inter", sans-serif;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  padding: 3rem;
-  gap: 3rem;
+  align-items: center;
+  height: 70vh;
 }
-body main .quiz .question {
-  width: 80%;
+body main .quizSection .quizContainer {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  width: 60vw;
+  overflow: hidden;
+  padding: 3rem;
+  text-align: center;
+}
+body main .quizSection .quizContainer h2 {
+  color: #333;
+  padding: 1.2rem;
+}
+body main .quizSection .quizContainer h3 {
+  font-size: 2rem;
+  color: #333;
+}
+body main .quizSection .quizContainer .answerContainer {
   display: flex;
   align-items: center;
-  gap: 4rem;
-  padding: 2rem;
-  border: 0.2rem solid;
-  border-radius: 2rem;
-  font-family: "Inner Tight", sans-serif;
+  gap: 1.3rem;
 }
-body main .quiz .question img {
-  width: 250px;
-  height: 300px;
-  border-radius: 2rem;
+body main .quizSection .quizContainer .answerContainer img {
+  border-radius: 1rem;
+  width: 30vh;
+  height: 30vh;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  flex-shrink: 0;
 }
-body main .quiz .question .questionText {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
-  font-size: 1.8rem;
-  width: 60%;
-  font-family: "Stick No Bills", sans-serif;
-  font-weight: 700;
-}
-body main .quiz .question .questionText .answers {
+body main .quizSection .quizContainer .btnContainer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  font-size: 1.4rem;
-  font-family: "Inner Tight", sans-serif;
-  font-weight: 600;
+  width: 100%;
 }
-body main .quiz .question .questionText .answers input {
-  width: 2vh;
-  height: 2vh;
-  outline: 10px;
-  mix-blend-mode: multiply;
-  box-shadow: none;
+body main .quizSection .quizContainer .btnContainer button {
+  display: block;
+  background-color: #402307;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+body main .quizSection .quizContainer .btnContainer button:hover {
+  background-color: #301a05;
+}
+body main .quizSection .quizContainer .btnContainer button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+body main .quizSection .quizContainer #result {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #28a745;
 }
 
 .footerContainer {
   background-color: #402307;
 }
 .footerContainer .botNav {
-  margin-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;

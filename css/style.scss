@@ -1,0 +1,186 @@
+// import font Stick No Bills
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap');
+
+// import font Inner Tight
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+// reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// nav
+body{
+    background-color: #FFF4DE;
+    main{
+        font-family: "Inner Tight", sans-serif;
+        #topNav{
+            background-color: #402307;
+            font-size: 1.7rem;
+            font-family: "Inner Tight", sans-serif;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5vh;
+            .backToMain{
+                width: 15%;
+                img{
+                    width: 100%;
+                }
+            }
+            ul{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 50%;
+                li{
+                    list-style-type: none;
+                    a{
+                        color: #FFF4DE;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-image: url(../Aimg/fond2.jpg);
+            background-size: cover;
+            background-position: center;
+            padding: 10vh;
+            padding-top: 0;
+            img{
+                width: 20%;
+            }
+            h1{
+                font-family: "Stick No Bills", sans-serif;
+                font-size: 3rem;
+                color: #402307;
+            }
+            p{
+                font-size: 1.3rem;
+                color: #FFF4DE;
+                line-height: 2.5rem;
+            }
+        }
+        .equipe{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            h2{
+                font-family: "Stick No Bills", sans-serif;
+                font-size: 2.5rem;
+                color: #FFF4DE;
+                background-color: #402307;
+                text-align: center;
+                margin: 5vh 0;
+            }
+        }
+
+
+
+
+
+        .footerContainer{
+            background-color: #402307;
+            .botNav{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5vh 0;
+                color: #FFF4DE;
+                a{
+                    color: #FFF4DE;
+                    text-decoration: none;
+                }
+                .botNavContainer{
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    h6{
+                        font-family: "Stick No Bills", sans-serif;
+                        font-size: 1.5rem;
+                    }
+                    p, a{
+                        font-family: "Inner Tight", sans-serif;
+                    }
+                    .programme{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        width: 30%;
+                        ul{
+                            li{
+                                list-style-type: none;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                                
+                            }
+                        }
+                    }
+                    .doubleElements{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        .contact{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                            .contactMethods{
+                                display: flex;
+                                flex-direction: column;
+                                a{
+                                    &:hover{
+                                        text-decoration: underline;
+                                    }
+                                }   
+                            }
+                        }
+                        .adress{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                        }
+                    }
+                    .socials{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        .socialsIcons{
+                            display: flex;
+                            gap: 1rem;
+                            svg{
+                                cursor: pointer;
+                                width: 3vh;
+                                height: 3vh;
+                            }
+                        }
+                    }
+                }
+            }
+            .copyright{
+                color: #FFF4DE;
+                display: flex;
+                justify-content: center;
+                font-family: "Inner Tight", sans-serif;
+                gap: .5rem;
+                padding: 2vh;
+                a{
+                    color: #FFF4DE;
+                }
+            }
+        }
+    }
+}
+
+
+

@@ -32,6 +32,24 @@ body main #topNav ul {
   align-items: center;
   width: 50%;
 }
+body main #topNav ul #dropDown {
+  color: #FFF4DE;
+  position: relative;
+}
+body main #topNav ul #dropDown #dropDownOptions {
+  display: none;
+  position: absolute;
+  background-color: #402307;
+  color: #FFF4DE;
+  min-width: 150px;
+}
+body main #topNav ul #dropDown #dropDownOptions li {
+  display: block;
+  text-align: left;
+  width: 30vw;
+  padding: 1vh 2vh;
+  font-size: 1rem;
+}
 body main #topNav ul li {
   list-style-type: none;
 }

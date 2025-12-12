@@ -24,3 +24,13 @@ toggle.onclick = function(){
     toggle.classList.toggle("active");
     navigation.classList.toggle("active");
 }
+
+const dropDown = document.querySelector("#dropDown")
+
+const dropDownOptions = document.querySelectorAll("#dropDownOptions")
+
+dropDown.addEventListener("click", () =>{
+    for (const dropDownOption of dropDownOptions){
+        dropDownOption.style.display = "block"
+    }
+})

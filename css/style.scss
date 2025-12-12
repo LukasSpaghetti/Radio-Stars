@@ -34,6 +34,24 @@ body{
                 justify-content: space-around;
                 align-items: center;
                 width: 50%;
+                #dropDown{
+                    color: #FFF4DE;
+                    position: relative;
+                    #dropDownOptions{
+                        display: none;
+                        position: absolute;
+                        background-color: #402307;
+                        color: #FFF4DE;
+                        min-width: 150px;
+                        li{
+                            display: block;
+                            text-align: left;
+                            width: 30vw;
+                            padding: 1vh 2vh;
+                            font-size: 1rem;
+                        }
+                    }
+                }
                 li{
                     list-style-type: none;
                     a{

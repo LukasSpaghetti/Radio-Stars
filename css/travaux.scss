@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFF4DE;
+
+    main{
+        .travaux{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 30vh;
+            h1{
+                font-size: 3rem;
+                font-family: Inter tight;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: #FFF4DE;
+                background-color: #402307;
+                width: 65%;
+                text-align: center;
+                height: 7vh;
+                border-radius: 4vh;
+                padding-top: .8vh;
+                
+            }
+            svg{
+                margin-top: 8vh;
+                width: 20vh;
+                height: 25vh;
+                stroke: #402307;
+            }
+        }
+    }
+}

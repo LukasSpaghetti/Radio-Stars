@@ -15,6 +15,9 @@ body {
   background-color: #FFDDF0;
   font-family: "Inner Tight", sans-serif;
 }
+body main {
+  /* message d'erreur visible si les images n'ont pas chargé */
+}
 body main #topNav {
   background-color: #540146;
   font-size: 1.5rem;
@@ -42,8 +45,31 @@ body main #topNav ul li a {
   color: #FFDDF0;
   text-decoration: none;
 }
+body main #header {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-color: #333; /* couleur de secours (ce que tu vois maintenant) */
+  position: relative;
+}
+body main #error {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #fff;
+  display: none;
+}
 body main header {
-  background-image: url(../PaulineImg/blackpinkmodif3.jpg);
+  transition: background-image 1s ease-in-out;
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;

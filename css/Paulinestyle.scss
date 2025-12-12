@@ -48,9 +48,34 @@ body{
                 }
             }
         }
-        
+        #header {
+  height: 350px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color: white;
+  font-size: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-color: #333; /* couleur de secours (ce que tu vois maintenant) */
+  position: relative;
+}
+
+/* message d'erreur visible si les images n'ont pas chargé */
+#error {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(255,255,255,0.12);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #fff;
+  display: none;
+}
         header{
-            background-image: url(../PaulineImg/blackpinkmodif3.jpg);
+            // background-image: url(../PaulineImg/blackpinkmodif3.jpg);
+            transition: background-image 1s ease-in-out;
             background-size: cover;
             background-position: top;
             background-repeat: no-repeat;

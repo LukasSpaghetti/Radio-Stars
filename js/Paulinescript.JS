@@ -60,6 +60,165 @@ inputF.addEventListener("input", () => {
     }
 });
 
+// document.addEventListener('DOMContentLoaded', () => {
+//   const header = document.getElementById('header');
+//   const errorEl = document.getElementById('error');
+
+//   if (!header) {
+//     console.error("Element #header introuvable.");
+//     return;
+//   }
+
+//   // <-- MODIFIE ICI les chemins pour tester (ex: "PaulineImg/image1.jpg" ou "./PaulineImg/image1.jpg")
+//   const images = [
+//     "PaulineImg/image1.jpg",
+    
+//     "PaulineImg/image2.jpg"
+//   ];
+
+//   let index = 0;
+//   const validImages = []; // chemins qui ont bien chargé
+
+//   // préchargement avec onload / onerror
+//   const loadPromises = images.map((src) => {
+//     return new Promise((resolve) => {
+//       const img = new Image();
+//       img.onload = () => {
+//         console.log("Loaded:", src);
+//         validImages.push(src);
+//         resolve({ src, ok: true });
+//       };
+//       img.onerror = (e) => {
+//         console.error("Erreur de chargement:", src, e);
+//         resolve({ src, ok: false });
+//       };
+//       img.src = src;
+//     });
+//   });
+
+//   Promise.all(loadPromises).then((results) => {
+//     const okCount = results.filter(r => r.ok).length;
+//     console.log(`${okCount} / ${results.length} images chargées correctement.`);
+
+//     if (okCount === 0) {
+//       // si aucune image valide : afficher message d'erreur visible
+//       errorEl.textContent = "Aucune image trouvée — vérifie les chemins dans script.js";
+//       errorEl.style.display = 'block';
+//       return;
+//     }
+
+//     // si tout est bon : démarrer le slideshow avec les images valides
+//     function changeBackground() {
+//       const src = validImages[index];
+//       header.style.backgroundImage = `url('${src}')`;
+//       console.log("Background appliqué ->", src);
+//       index = (index + 1) % validImages.length;
+//     }
+
+//     changeBackground();
+//     setInterval(changeBackground, 3000);
+//   });
+// });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.getElementById('header');
+  const errorEl = document.getElementById('error');
+
+  if (!header) {
+    console.error("Element #header introuvable.");
+    return;
+  }
+
+  // LISTE DES IMAGES + POSITION personnalisée
+  const backgrounds = [
+    {
+      src: "PaulineImg/image1.jpg",
+      position: "top",
+
+    },
+    {
+      src: "PaulineImg/image2.jpg",
+      position: "top",
+
+    },
+    {
+      src: "PaulineImg/image3.jpg",
+      position: "top",
+
+    },
+    {
+      src: "PaulineImg/image4.jpg",
+      position: "top",
+
+    },
+    {
+      src: "PaulineImg/image5.jpg",
+      position: "top",
+
+    }
+  ];
+
+  let index = 0;
+  const validImages = [];
+
+  // préchargement
+  const loadPromises = backgrounds.map((bg) => {
+    return new Promise((resolve) => {
+      const img = new Image();
+      img.onload = () => {
+        console.log("Loaded:", bg.src);
+        validImages.push(bg);  // on ajoute l'objet complet, pas juste src
+        resolve({ src: bg.src, ok: true });
+      };
+      img.onerror = (e) => {
+        console.error("Erreur de chargement:", bg.src, e);
+        resolve({ src: bg.src, ok: false });
+      };
+      img.src = bg.src;
+    });
+  });
+
+  Promise.all(loadPromises).then((results) => {
+    const okCount = results.filter(r => r.ok).length;
+    console.log(`${okCount} / ${results.length} images chargées correctement.`);
+
+    if (okCount === 0) {
+      errorEl.textContent = "Aucune image trouvée — vérifie les chemins dans script.js";
+      errorEl.style.display = 'block';
+      return;
+    }
+
+    // applique une image avec les options
+    function changeBackground() {
+      const bg = validImages[index];
+
+      header.style.backgroundImage = `url('${bg.src}')`;
+      header.style.backgroundPosition = bg.position || "center";
+      header.style.backgroundSize = bg.size || "cover";
+
+      console.log("Background appliqué ->", bg);
+
+      index = (index + 1) % validImages.length;
+    }
+
+    changeBackground();
+    setInterval(changeBackground, 3000);
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ///style hover border text
 const phover = document.querySelectorAll('.border');
 

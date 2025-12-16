@@ -1,0 +1,538 @@
+// import font Stick No Bills
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap');
+
+// import font Inner Tight
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Pauline : roseC = FFDDF0 roseF = 540146
+// reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h3{
+    padding-bottom: 2vh;
+}
+// nav
+body{
+
+    background-color: #FFDDF0;
+    font-family: "Inner Tight", sans-serif;
+    main{
+        
+        #topNav{
+            background-color: #540146;
+            font-size: 1.5rem;
+            font-family: "Inner Tight", sans-serif;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5vh;
+            .backToMain{
+                width: 15%;
+                img{
+                    width: 100%;
+                }
+            }
+            ul{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 50%;
+                li{
+                    list-style-type: none;
+                    a{
+                        color: #FFDDF0;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        #header {
+  height: 350px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color: white;
+  font-size: 2rem;
+  background-size: cover;
+  background-position: center;
+  background-color: #333; /* couleur de secours (ce que tu vois maintenant) */
+  position: relative;
+}
+
+/* message d'erreur visible si les images n'ont pas chargé */
+#error {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(255,255,255,0.12);
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #fff;
+  display: none;
+}
+        header{
+            // background-image: url(../PaulineImg/blackpinkmodif3.jpg);
+            transition: background-image 1s ease-in-out;
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+            h1{
+                font-family: "Stick No Bills", sans-serif;
+                font-size: 7rem;
+                font-weight: 600;
+                text-align: center;
+                color: #FFDDF0;
+                padding: 15vh 0;
+            }
+        }
+        .kpopA{
+            
+            padding: 10vh 5vw;
+            gap: 5vw;
+            font-size: 1.2rem;
+            article{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                aside{  
+                width: 38%;
+                margin-right: 2vw;
+                img{
+                    width: 100%;
+                    border-radius: 40px;
+                }
+            }
+            p{
+                border: #540146 2px solid;
+                color: #540146;
+                padding: 2vw;
+                border-radius: 40px;
+                width: 60vw;
+            }
+            }
+        }
+        h2{
+                font-family: "Stick No Bills", sans-serif;
+                font-size: 3rem;
+                font-weight: 700;
+                text-align: center;
+                color: #FFDDF0;
+                background-color: #540146;
+
+                padding: 3vh 0;
+            }
+            .artiste{
+                .blackpink{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    width: 100%;
+                    padding: 10vh 5vw;
+                    font-size: 1.2rem;
+                    aside{
+                        width: 45%;
+                        img{
+                            width: 100%;
+                            border-radius: 40px;
+                        }
+                    }
+                }
+            }
+            .fifty{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    width: 100%;
+                    padding: 10vh 5vw;
+                    font-size: 1.2rem;
+                    aside{
+                        width: 45%;
+                        img{
+                            width: 100%;
+                            border-radius: 40px;
+                        }
+                    }
+                }
+            .texteNote{
+                color: #540146;
+                padding: 2vw;
+                width: 50vw;
+
+                .textA{
+                    padding-bottom: 15vh;
+                    h3{
+                        font-family: "Stick No Bills", sans-serif;
+                        font-size: 2rem;
+                        font-weight: 700;
+                    }
+                }
+                .note{
+                    input{
+                        color: #540146;
+                        background-color: #FFDDF0;
+                        width: 4vw;
+                        height: 4vh;
+                        text-align: center;
+                        border: #540146 2px solid;
+                        border-radius: 1vh;
+                        &::placeholder{
+                            color: #540146;
+                            font-family: "Inner Tight", sans-serif;  
+                        }
+                    }
+                    input:focus {
+                    border: #540146 2px solid;
+                    border-radius: 1vh;
+                    outline: none;
+                    }
+                }
+            }
+            
+//////////////MV
+    .containerMV{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            .mv{
+                display: flex;
+                width: 90%;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 10vh;
+                iframe {
+    width: 100%;               /* prend toute la largeur du conteneur */
+         /* ratio standard vidéo */
+    border-radius: 40px;
+    border: none;
+}
+            }
+        }
+
+//////////FOOTER
+        .footerContainer{
+            background-color: #540146;
+            .botNav{
+                margin-top: 10vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 5vh 0;
+                color: #FFDDF0;
+                a{
+                    color: #FFDDF0;
+                    text-decoration: none;
+                }
+                .botNavContainer{
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    h6{
+                        font-family: "Stick No Bills", sans-serif;
+                        font-size: 1.5rem;
+                    }
+                    p, a{
+                        font-family: "Inner Tight", sans-serif;
+                    }
+                    .programme{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        width: 30%;
+                        ul{
+                            li{
+                                list-style-type: none;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                                
+                            }
+                        }
+                    }
+                    .doubleElements{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        .contact{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                        }
+                        .adress{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1rem;
+                        }
+                    }
+                    .socials{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                        .socialsIcons{
+                            display: flex;
+                            gap: 1rem;
+                            svg{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            .copyright{
+                color: #FFDDF0;
+                display: flex;
+                justify-content: center;
+                font-family: "Inner Tight", sans-serif;
+                gap: .5rem;
+                padding: 2vh;
+                a{
+                    color: #FFDDF0;
+                }
+            }
+        }
+    }
+}
+
+.border{
+    border: #540146 2px solid;
+    border-radius: 40px;
+    margin-right: 2vw;
+}
+
+
+
+
+// responsive
+@media screen and (max-width: 768px) {
+    main{
+
+        #toggle{
+                    position: fixed;
+                    display: block;
+                    width: 5vh;
+                    height: .7vh;
+                    border-radius: 2vh;
+                    top: 3vh;
+                    right: 2vh;
+                    cursor: pointer;
+                    background-color: #430138;
+    
+                    z-index: 999;
+                    &:before, &:after{
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 5vh;
+                        height: .7vh;
+                        background-color: #430138;
+    
+                        border-radius : 2vh;
+                    }
+                    &:before{
+                        top: -1.2vh;
+                    }
+                    &:after{
+                        top: 1.2vh;
+                    }
+                }
+                #toggle.active{
+                    background-color: transparent;
+                    &::before{
+                        transform: rotate(45deg);
+                        top: 0;
+                        background-color: #FFDDF0;
+                    }
+                    &::after{
+                        transform: rotate(-45deg);
+                        top: 0;
+                        background-color: #FFDDF0;
+                    }
+                }
+                #topNav{
+                    .backToMain{
+                        padding-left: 3vh;
+                        padding-top: 3vh;
+                        img{
+                            width: 20vh;
+                        }
+                    }
+                    position: fixed;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10vh;
+                    justify-content: left;
+                    right: -100%;
+                    width: 100%;
+                    height: 100vh;
+                    transition: .5s all;
+                    background-color: #540146;
+                    z-index: 998;
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5vh;
+                        padding-left: 5vh;
+                        li{
+                            display: block;
+                            margin-bottom: 2vh;
+                            width: 100%;
+                            a{
+                                color: #FFDDF0;
+                                font-size: 1.5rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                #topNav.active{
+                    right: -70%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: left;
+                }
+                .mainContainer{
+                    article{
+                        width: 90%;
+                    }
+                }
+            }
+        
+        
+      .kpopA {
+        width: 100%;
+        font-size: 1rem;
+        gap: 0;
+    
+        article {
+          display: flex;
+    
+          flex-wrap: wrap;
+          aside{
+            width: 100%;
+            flex: 1 1 100%;
+            margin-right: 0;
+            margin-bottom: 10vh;
+
+            img{
+                height: 30vh;
+                 object-fit: cover;
+                 object-position: top;
+
+            }
+          }
+          p{
+            width: 100%;
+            flex: 1 1 100%;
+          }
+        }
+      }
+      .blackpink{
+        flex-wrap: wrap;
+        width: 100%;
+         aside{
+            width: 100%;
+            flex: 1 1 100%;
+            margin-right: 0;
+            margin-bottom: 10vh;
+            img{
+                width: 100%;
+                height: 80vh;
+                 object-fit: cover;
+                 object-position: 90% 0%;
+            }
+         }
+         .texteNote{
+            width: 100%;
+            flex: 1 1 100%;
+            .note{
+                input{
+                    width: 8vw;
+                }
+            }
+         }
+      }
+    
+    .fifty{
+        flex-wrap: wrap;
+        width: 100%;
+         aside{
+            width: 100%;
+            flex: 1 1 100%;
+            margin-right: 0;
+            margin-bottom: 10vh;
+            img{
+                height: 80vh;
+                 object-fit: cover;
+                 object-position: top;
+            }
+         }
+         .texteNote{
+            width: 100%;
+            flex: 1 1 100%;
+
+            .note{
+                input{
+                    width: 8vw;
+                }
+            }
+         }
+      }
+      section{
+        width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+           
+      }
+    .border{
+       
+        margin-right: 0vw;
+    }
+    .footerContainer{
+        width: 100%;
+        .botNav{
+            width: 100%;
+            .botNavContainer{
+              
+                .programme {
+                display: none !important;
+                }
+            }
+        }
+    }
+    }
+@media screen and (min-width: 768px){
+main{
+
+ #topNav{
+            background-color: #540146;
+            font-size: 1.5rem;
+            font-family: "Inner Tight", sans-serif;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5vh;
+            .backToMain{
+                width: 15%;
+                img{
+                    width: 100%;
+                }
+            }
+            ul{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                min-width: 65%;
+                width: 50%;
+                li{
+                    list-style-type: none;
+                    a{
+                        color: #FFDDF0;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+}
+}

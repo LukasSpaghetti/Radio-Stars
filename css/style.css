@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FFF4DE;
+}
+body main {
+  font-family: "Inner Tight", sans-serif;
+}
+body main #topNav {
+  background-color: #402307;
+  font-size: 1.7rem;
+  font-family: "Inner Tight", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5vh;
+}
+body main #topNav .backToMain {
+  width: 15%;
+}
+body main #topNav .backToMain img {
+  width: 100%;
+}
+body main #topNav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+body main #topNav ul li {
+  list-style-type: none;
+}
+body main #topNav ul li a {
+  color: #FFF4DE;
+  text-decoration: none;
+}
+body main #topNav ul li a:hover {
+  text-decoration: underline;
+}
+body main header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: url(../Aimg/fond2.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10vh;
+  padding-top: 0;
+}
+body main header img {
+  width: 20%;
+}
+body main header h1 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 3rem;
+  color: #402307;
+}
+body main header p {
+  font-size: 1.3rem;
+  color: #FFF4DE;
+  line-height: 2.5rem;
+}
+body main h2 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 2.5rem;
+  color: #FFF4DE;
+  background-color: #402307;
+  text-align: center;
+  font-weight: 500;
+  padding: 2vh 0;
+}
+body main .equipe {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10vh 5vh;
+  gap: 2vh;
+}
+body main .equipe .profil {
+  min-width: 20%;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 2vh;
+}
+body main .equipe .profil aside {
+  width: 300px;
+}
+body main .equipe .profil aside img {
+  height: 300px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10vh;
+}
+body main .equipe .profil .nom {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 1.8rem;
+  color: #402307;
+}
+body main .equipe .profil .fonction {
+  width: 300px;
+  font-size: 1.2rem;
+  color: #402307;
+  text-align: center;
+}
+body main .equipe .profil .bouttonP {
+  width: 200px;
+  text-decoration: none;
+  font-family: "Inner Tight", sans-serif;
+  font-size: 1rem;
+  color: #FFF4DE;
+  background-color: #402307;
+  padding: 1vh 0;
+  border-radius: 5vh;
+  border: 2px solid #402307;
+  transition: all 0.3s ease-in-out;
+}
+body main .equipe .profil .bouttonP:hover {
+  background-color: #FFF4DE;
+  color: #402307;
+  border: 2px solid #402307;
+}
+body main .banner {
+  background-color: #402307;
+}
+body main .banner h3 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 2rem;
+  color: #FFF4DE;
+  text-align: center;
+  padding: 3vh 0;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+body main .banner:hover {
+  background-color: #FFF4DE;
+  border-top: #402307 solid 4px;
+  border-bottom: #402307 solid 4px;
+}
+body main .banner:hover h3 {
+  color: #402307;
+}
+body main .newsletter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5vh;
+  padding: 10vh 5vh;
+  color: #402307;
+}
+body main .newsletter aside img {
+  width: 200px;
+}
+body main .newsletter .texteN {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  width: 500px;
+  text-align: center;
+  justify-content: center;
+}
+body main .newsletter .texteN h3 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  font-weight: 500;
+}
+body main .newsletter .texteN p {
+  font-size: 1.2rem;
+  color: #402307;
+  text-align: center;
+  line-height: 2rem;
+}
+body main .newsletter .texteN .mail input {
+  padding: 1vh;
+  font-size: 1rem;
+  border: 2px solid #402307;
+  border-radius: 5vh;
+  width: 300px;
+  background-color: #FFF4DE;
+}
+body main .newsletter .texteN .abonne input {
+  width: 200px;
+  text-decoration: none;
+  font-family: "Inner Tight", sans-serif;
+  font-size: 1rem;
+  color: #FFF4DE;
+  background-color: #402307;
+  padding: 1vh 0;
+  border-radius: 5vh;
+  border: 2px solid #402307;
+}
+body .footerContainer {
+  background-color: #402307;
+}
+body .footerContainer .botNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 0;
+  color: #FFF4DE;
+}
+body .footerContainer .botNav a {
+  color: #FFF4DE;
+  text-decoration: none;
+}
+body .footerContainer .botNav .botNavContainer {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+body .footerContainer .botNav .botNavContainer h6 {
+  font-family: "Stick No Bills", sans-serif;
+  font-size: 1.5rem;
+}
+body .footerContainer .botNav .botNavContainer p, body .footerContainer .botNav .botNavContainer a {
+  font-family: "Inner Tight", sans-serif;
+}
+body .footerContainer .botNav .botNavContainer .programme {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 30%;
+}
+body .footerContainer .botNav .botNavContainer .programme ul li {
+  list-style-type: none;
+}
+body .footerContainer .botNav .botNavContainer .programme ul li:hover {
+  text-decoration: underline;
+}
+body .footerContainer .botNav .botNavContainer .doubleElements {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .footerContainer .botNav .botNavContainer .doubleElements .contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .footerContainer .botNav .botNavContainer .doubleElements .contact .contactMethods {
+  display: flex;
+  flex-direction: column;
+}
+body .footerContainer .botNav .botNavContainer .doubleElements .contact .contactMethods a:hover {
+  text-decoration: underline;
+}
+body .footerContainer .botNav .botNavContainer .doubleElements .adress {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .footerContainer .botNav .botNavContainer .socials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body .footerContainer .botNav .botNavContainer .socials .socialsIcons {
+  display: flex;
+  gap: 1rem;
+}
+body .footerContainer .botNav .botNavContainer .socials .socialsIcons svg {
+  cursor: pointer;
+  width: 3vh;
+  height: 3vh;
+}
+body .footerContainer .copyright {
+  color: #FFF4DE;
+  display: flex;
+  justify-content: center;
+  font-family: "Inner Tight", sans-serif;
+  gap: 0.5rem;
+  padding: 2vh;
+}
+body .footerContainer .copyright a {
+  color: #FFF4DE;
+}
+
+@media screen and (max-width: 768px) {
+  main #toggle {
+    position: fixed;
+    display: block;
+    width: 5vh;
+    height: 0.7vh;
+    border-radius: 2vh;
+    top: 3vh;
+    right: 2vh;
+    cursor: pointer;
+    background-color: #402307;
+    z-index: 999;
+  }
+  main #toggle:before, main #toggle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 5vh;
+    height: 0.7vh;
+    background-color: #402307;
+    border-radius: 2vh;
+  }
+  main #toggle:before {
+    top: -1.2vh;
+  }
+  main #toggle:after {
+    top: 1.2vh;
+  }
+  main #toggle.active {
+    background-color: transparent;
+  }
+  main #toggle.active::before {
+    transform: rotate(45deg);
+    top: 0;
+    background-color: #FFF4DE;
+  }
+  main #toggle.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    background-color: #FFF4DE;
+  }
+  main #topNav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    justify-content: left;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s all;
+    background-color: #402307;
+    z-index: 998;
+  }
+  main #topNav .backToMain {
+    padding-left: 3vh;
+    padding-top: 3vh;
+  }
+  main #topNav .backToMain img {
+    width: 20vh;
+  }
+  main #topNav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding-left: 5vh;
+  }
+  main #topNav ul li {
+    display: block;
+    margin-bottom: 2vh;
+    width: 100%;
+  }
+  main #topNav ul li a {
+    color: #FFF4DE;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  main #topNav.active {
+    right: -70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  main .mainContainer article {
+    width: 90%;
+  }
+  main #topNav {
+    background-color: #402307;
+    font-size: 1.5rem;
+    font-family: "Inner Tight", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vh;
+  }
+  main #topNav .backToMain {
+    width: 15%;
+  }
+  main #topNav .backToMain img {
+    width: 100%;
+  }
+  main #topNav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 65%;
+    width: 50%;
+  }
+  main #topNav ul li {
+    list-style-type: none;
+  }
+  main #topNav ul li a {
+    color: #FFF4DE;
+    text-decoration: none;
+  }
+  main #topNav {
+    background-color: #402307;
+    font-size: 1.5rem;
+    font-family: "Inner Tight", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5vh;
+  }
+  main #topNav .backToMain {
+    width: 15%;
+  }
+  main #topNav .backToMain img {
+    width: 100%;
+  }
+  main #topNav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 65%;
+    width: 50%;
+  }
+  main #topNav ul li {
+    list-style-type: none;
+  }
+  main #topNav ul li a {
+    color: #FFF4DE;
+    text-decoration: none;
+  }
+  main .footerContainer {
+    width: 100%;
+  }
+  main .footerContainer .botNav {
+    width: 100%;
+  }
+  main .footerContainer .botNav .botNavContainer .programme {
+    display: none !important;
+  }
+}/*# sourceMappingURL=style.css.map */

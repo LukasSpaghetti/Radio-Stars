@@ -1,0 +1,465 @@
+// import font Stick No Bills
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap');
+
+// import font Inner Tight
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+// reset
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// nav
+body{
+    background-color: #FFF4DE;
+    main{
+        #topNav{
+            background-color: #402307;
+            font-size: 1.7rem;
+            font-family: "Inner Tight", sans-serif;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5vh;
+            .backToMain{
+                width: 15%;
+                .backToMain{
+                    width: 15%;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            ul{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 50%;
+                li{
+                    list-style-type: none;
+                    a{
+                        color: #FFF4DE;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .formContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5vh;
+            .radioForm{
+                background-color: #402307;
+                color: #fff;
+                width: 80%;
+                padding: 3rem;
+                border-radius: 2rem;
+                margin: 10vh 0;
+                font-family: "Inner Tight", sans-serif;
+                fieldset{
+                    border: none;
+                    legend{
+                        font-size: 3rem;
+                        margin-bottom: 5vh;
+                    }
+                    .infos{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 15vw;
+                        p{
+                            display: flex;
+                            flex-direction: column;
+                            font-size: 1.8rem;
+                            gap: 1rem;
+                            input{
+                                padding: 1rem;
+                                color: #b69776;
+                                border: none;
+                                border-radius: 2rem;
+                                font-size: 1.5rem;
+                                &::placeholder{
+                                    color: #b69776;
+                                }
+                            }
+                        }
+                        .firstPartInfos{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2rem;
+                            .programmePref{
+                                input{
+                                    width: 5%;
+                                    height: 3vh;
+                                    accent-color: #b69776;
+                                }
+                            }
+                        }
+                        .secondPartInfos{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2rem;
+                            width: 50%;
+                            textarea{
+                                border-radius: 2rem;
+                                color: #b69776;
+                                padding: 1rem;
+                                font-family: "Inner Tight", sans-serif;
+                                font-size: 1.5rem;
+                                height: 30vh;
+                                width: 100%;
+                                &::placeholder{
+                                    color: #b69776;
+                                }
+                            }
+                            .submit{
+                                input{
+                                    background-color: #b69776;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    padding: 3vh 0;
+                                    font-weight: 600;
+                                    letter-spacing: .2rem;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .resultsPage{
+                color: #402307;
+                text-decoration: none;
+                font-family: "Inner Tight", sans-serif;
+                font-weight: 600;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+.footerContainer{
+    background-color: #402307;
+    .botNav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5vh 0;
+        color: #FFF4DE;
+        a{
+            color: #FFF4DE;
+            text-decoration: none;
+        }
+        .botNavContainer{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            h6{
+                font-family: "Stick No Bills", sans-serif;
+                font-size: 1.5rem;
+            }
+            p, a{
+                font-family: "Inner Tight", sans-serif;
+            }
+            .programme{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                width: 30%;
+                ul{
+                    li{
+                        list-style-type: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                        
+                    }
+                }
+            }
+            .doubleElements{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                .contact{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    .contactMethods{
+                        display: flex;
+                        flex-direction: column;
+                        a{
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }   
+                    }
+                }
+                .adress{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+            }
+            .socials{
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                        .socialsIcons{
+                    display: flex;
+                    gap: 1rem;
+                    svg{
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        color: #FFF4DE;
+        display: flex;
+        justify-content: center;
+        font-family: "Inner Tight", sans-serif;
+        gap: .5rem;
+        padding: 2vh;
+        a{
+            color: #FFF4DE;
+        }
+    }
+}
+
+////////////////////////////////// Page result-page.html
+
+body{
+    main{
+        .resultsContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 3rem;
+            font-family: "Inner Tight", sans-serif;
+            .results{
+                padding: 3rem;
+                background-color: #402307;
+                border-radius: 2rem;
+                color: #fff;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                .greeting, .reminder{
+                    font-size: 3rem;
+                    text-transform: capitalize;
+                }
+                .reminderInfos{
+                    color: #FFF4DE;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    font-size: 1.3rem;
+                    .programsLiked{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 1rem;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+
+/////////////////////////////////////// responsive
+
+@media screen and (max-width: 768px){
+    html{
+        font-size: 10px;
+    }
+
+    body{
+        main{
+            #toggle{
+                position: fixed;
+                display: block;
+                width: 5vh;
+                height: .6vh;
+                border-radius: 2vh;
+                top: 3vh;
+                right: 2vh;
+                cursor: pointer;
+                background-color: #b69776;
+                z-index: 999;
+                &:before, &:after{
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 5vh;
+                    height: .7vh;
+                    background-color: #b69776;
+                    border-radius: 2vh;
+                }
+                &:before{
+                    top: -1.2vh;
+                }
+                &:after{
+                    top: 1.2vh;
+                }
+            }
+            #toggle.active{
+                background-color: transparent;
+                &::before{
+                    transform: rotate(45deg);
+                    top: 0;
+                    background-color: #fff;
+                }
+                &::after{
+                    transform: rotate(-45deg);
+                    top: 0;
+                    background-color: #fff;
+                }
+            }
+            #topNav{
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                gap: 10vh;
+                justify-content: left;
+                right: -100%;
+                width: 100%;
+                height: 100vh;
+                top: 0;
+                transition: .5s all;
+                background-color: #402307;
+                z-index: 998;
+                padding: 0;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5vh;
+                    margin: 0 5vh;
+                    li{
+                        display: block;
+                        margin-bottom: 2vh;
+                        width: 100%;
+                        a{
+                            color: #fff;
+                            font-size: 1.5rem;
+                            text-align: center;
+                        }
+                    }
+                }
+                .backToMain{
+                    img{
+                        width: 20vh;
+                        margin: 0 3vh;
+                    }
+                }
+            }
+            #topNav.active{
+                right: -70%;
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+            }
+            .formContainer{
+                text-align: center;
+                .radioForm{
+                    fieldset{
+                        .infos{
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: center;
+                            gap: 3rem;
+                            .firstPartInfos{
+                                width: 60%;
+                                gap: 3rem;
+                                .programmePref{
+                                    p{
+                                        align-items: start;
+                                        flex-wrap: wrap;
+                                        flex-direction: row;
+                                        gap: 3rem;
+                                        span{
+                                            display: flex;
+                                            align-items: center;
+                                            gap: 1rem;
+                                            width: 45%;
+                                            input{
+                                                width: 2vh;
+                                                height: 2vh;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1920px){
+    html{
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    body{
+        main{
+            #topNav{
+                margin: 0 2vh;
+                right: -110%;
+                .backToMain{
+                    img{
+                        width: 15vh;
+                    }
+                }
+                ul{
+                    margin: 0 5vh;
+                }
+            }
+            #topNav.active{
+                right: -60%;
+            }
+            .formContainer{
+                .radioForm{
+                    width: 90%;
+                    fieldset{
+                        .infos{
+                            .firstPartInfos{
+                                width: 80%;
+                                .programmePref{
+                                    p{
+                                        span{
+                                            width: 44%;
+                                        }
+                                    }
+                                }
+                            }
+                            .secondPartInfos{
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+            .footerContainer{
+                .botNav{
+                    .botNavContainer{
+                        width: 70%;
+                        .programme{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

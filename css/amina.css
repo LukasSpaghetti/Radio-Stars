@@ -386,12 +386,12 @@ body main .footerContainer .copyright a {
   color: #FBF7EF;
 }
 
-@media screen and (min-width: 371px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   body main #toggle {
     position: fixed;
     display: block;
     width: 5vh;
-    height: 0.7vh;
+    height: 0.6vh;
     border-radius: 2vh;
     top: 3vh;
     right: 2vh;
@@ -439,19 +439,13 @@ body main .footerContainer .copyright a {
     transition: 0.5s all;
     background-color: #001952;
     z-index: 998;
-  }
-  body main #topNav .backToMain {
-    padding-left: 3vh;
-    padding-top: 3vh;
-  }
-  body main #topNav .backToMain img {
-    width: 20vh;
+    padding: 0;
   }
   body main #topNav ul {
     display: flex;
     flex-direction: column;
     gap: 5vh;
-    padding-left: 5vh;
+    margin: 0 5vh;
   }
   body main #topNav ul li {
     display: block;
@@ -462,6 +456,10 @@ body main .footerContainer .copyright a {
     color: #FBF7EF;
     font-size: 1.5rem;
     text-align: center;
+  }
+  body main #topNav .backToMain img {
+    width: 20vh;
+    margin: 0 3vh;
   }
   body main #topNav.active {
     right: -70%;
@@ -554,47 +552,109 @@ body main .footerContainer .copyright a {
   }
 }
 @media screen and (max-width: 480px) {
-  header h2 {
-    font-size: 10rem;
+  body main #topNav {
+    margin: 0 2vh;
+    right: -110%;
   }
-  header img {
+  body main #topNav .backToMain img {
+    width: 15vh;
+  }
+  body main #topNav ul {
+    margin: 0 5vh;
+  }
+  body main #topNav.active {
+    right: -60%;
+  }
+  body main header h2 {
+    font-size: 4rem;
+  }
+  body main header img {
     width: 50%;
   }
-  .descriptionContainer {
+  body main .descriptionContainer {
     width: 95%;
     padding: 2vh;
     font-size: 0.85rem;
   }
-  .pnl, .billie, .plk, .neighbourhood {
+  body main .pnl, body main .billie, body main .plk, body main .neighbourhood {
     width: 95%;
     margin: 3vh auto;
     padding: 1.5vh;
     flex-direction: column;
   }
-  .pnl .container, .billie .container, .plk .container, .neighbourhood .container {
+  body main .pnl .container, body main .billie .container, body main .plk .container, body main .neighbourhood .container {
     flex-direction: column;
   }
-  .pnl .container img, .billie .container img, .plk .container img, .neighbourhood .container img {
+  body main .pnl .container img, body main .billie .container img, body main .plk .container img, body main .neighbourhood .container img {
     width: 100%;
     max-height: 35vh;
     border-radius: 40px;
   }
-  .pnl .container .texte p, .billie .container .texte p, .plk .container .texte p, .neighbourhood .container .texte p {
-    font-size: 0.85rem;
+  body main .pnl .container .texte p, body main .billie .container .texte p, body main .plk .container .texte p, body main .neighbourhood .container .texte p {
+    font-size: 0.8rem;
     line-height: 1.4;
   }
-  #topNav {
+  body main footer #topNav {
     position: fixed;
     width: 100%;
     right: -100%;
   }
-  #topNav ul {
+  body main footer #topNav ul {
     flex-direction: column;
     padding-left: 2vh;
   }
-  footer .botNavContainer {
+  body main footer .botNavContainer {
     flex-direction: column;
     align-items: center;
     gap: 3vh;
+    margin-right: 10vh;
+  }
+}
+@media screen and (max-width: 360px) {
+  body main #topNav ul li a {
+    font-size: 1rem;
+  }
+  body main header h2 {
+    font-size: 2.4rem;
+  }
+  body main header img {
+    width: 30%;
+  }
+  body main .description .descriptionContainer p {
+    font-size: 0.8rem;
+  }
+  body main .pnl .container .texte .titre h4 {
+    height: 7vh;
+    font-size: 1.5rem;
+  }
+  body main .pnl .container .texte p {
+    font-size: 0.8rem;
+  }
+  body main .billie .container .texte .titre h4 {
+    height: 7vh;
+    font-size: 1.5rem;
+  }
+  body main .billie .container .texte p {
+    font-size: 0.8rem;
+  }
+  body main .plk .container .texte .titre h4 {
+    height: 7vh;
+    font-size: 1.5rem;
+  }
+  body main .plk .container .texte p {
+    font-size: 0.8rem;
+  }
+  body main .neighbourhood .container .texte .titre h4 {
+    height: 7vh;
+    font-size: 1.5rem;
+  }
+  body main .neighbourhood .container .texte p {
+    font-size: 0.8rem;
+  }
+  body main #like-container #coeur {
+    font-size: 2rem;
+  }
+  body main #like-container p, body main #like-container #like-text {
+    font-size: 1rem;
   }
 }/*# sourceMappingURL=amina.css.map */

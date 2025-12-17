@@ -262,7 +262,7 @@ body main .footerContainer .copyright a {
     width: 15vh;
   }
   body main #topNav.active {
-    right: -60%;
+    right: -20%;
   }
   body main .travaux h1 {
     font-size: 0.9rem;

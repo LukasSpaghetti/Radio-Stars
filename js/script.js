@@ -31,6 +31,6 @@ const dropDownOptions = document.querySelectorAll("#dropDownOptions")
 
 dropDown.addEventListener("click", () =>{
     for (const dropDownOption of dropDownOptions){
-        dropDownOption.style.display = "block"
+        dropDownOption.classList.toggle("dropDownToggle")
     }
 })

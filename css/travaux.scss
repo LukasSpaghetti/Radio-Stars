@@ -10,10 +10,6 @@ body{
     background-color: #FFF4DE;
 
     main{
-
-        /* =======================
-           TOP NAV
-        ======================= */
         #topNav{
             background-color: #402307;
             font-size: 1.7rem;
@@ -24,9 +20,10 @@ body{
 
             .backToMain{
                 width: 15%;
-                img{ width: 100%; }
+                img{
+                     width: 100%; 
+                    }
             }
-
             ul{
                 display: flex;
                 justify-content: space-around;
@@ -40,15 +37,13 @@ body{
                         color: #FFF4DE;
                         text-decoration: none;
 
-                        &:hover{ text-decoration: underline; }
+                        &:hover{
+                             text-decoration: underline; 
+                            }
                     }
                 }
             }
         }
-
-        /* =======================
-           TRAVAUX
-        ======================= */
         .travaux{
             display: flex;
             flex-direction: column;
@@ -77,10 +72,6 @@ body{
                 margin-bottom: 20vh;
             }
         }
-
-        /* =======================
-           FOOTER
-        ======================= */
         .footerContainer{
             background-color: #402307;
 
@@ -119,10 +110,11 @@ body{
                         ul li{
                             list-style-type: none;
 
-                            &:hover{ text-decoration: underline; }
+                            &:hover{
+                                 text-decoration: underline;
+                                 }
                         }
                     }
-
                     .doubleElements{
                         display: flex;
                         flex-direction: column;
@@ -139,7 +131,9 @@ body{
                             display: flex;
                             flex-direction: column;
 
-                            a:hover{ text-decoration: underline; }
+                            a:hover{
+                                text-decoration: underline; 
+                            }
                         }
                     }
 

@@ -365,12 +365,16 @@ body{
             .quizSection{
                 margin: 15vh 0;
                 .quizContainer{
+                    display: flex;
+                    flex-direction: column;
                     width: 80%;
                     gap: 2rem;
                     #result{
                         margin: 0;
                     }
                     .answerContainer{
+                        display: flex;
+                        flex-direction: column;
                         padding: 2vh;
                     }
                 }

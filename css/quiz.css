@@ -310,6 +310,8 @@ body main .quizSection .quizContainer #result {
     margin: 15vh 0;
   }
   body main .quizSection .quizContainer {
+    display: flex;
+    flex-direction: column;
     width: 80%;
     gap: 2rem;
   }
@@ -317,6 +319,8 @@ body main .quizSection .quizContainer #result {
     margin: 0;
   }
   body main .quizSection .quizContainer .answerContainer {
+    display: flex;
+    flex-direction: column;
     padding: 2vh;
   }
 }

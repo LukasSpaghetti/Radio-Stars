@@ -220,4 +220,135 @@ body main .quizSection .quizContainer #result {
 }
 .footerContainer .copyright a {
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  body main #toggle {
+    position: fixed;
+    display: block;
+    width: 5vh;
+    height: 0.6vh;
+    border-radius: 2vh;
+    top: 3vh;
+    right: 2vh;
+    cursor: pointer;
+    background-color: #b69776;
+    z-index: 999;
+  }
+  body main #toggle:before, body main #toggle:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 5vh;
+    height: 0.7vh;
+    background-color: #b69776;
+    border-radius: 2vh;
+  }
+  body main #toggle:before {
+    top: -1.2vh;
+  }
+  body main #toggle:after {
+    top: 1.2vh;
+  }
+  body main #toggle.active {
+    background-color: transparent;
+  }
+  body main #toggle.active::before {
+    transform: rotate(45deg);
+    top: 0;
+    background-color: #fff;
+  }
+  body main #toggle.active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    background-color: #fff;
+  }
+  body main #topNav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    justify-content: left;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s all;
+    background-color: #402307;
+    z-index: 998;
+    padding: 0;
+  }
+  body main #topNav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin: 0 5vh;
+  }
+  body main #topNav ul li {
+    display: block;
+    margin-bottom: 2vh;
+    width: 100%;
+  }
+  body main #topNav ul li a {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  body main #topNav .backToMain img {
+    width: 20vh;
+    margin: 0 3vh;
+  }
+  body main #topNav.active {
+    right: -70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+  }
+  body main .quizSection {
+    margin: 15vh 0;
+  }
+  body main .quizSection .quizContainer {
+    width: 80%;
+    gap: 2rem;
+  }
+  body main .quizSection .quizContainer #result {
+    margin: 0;
+  }
+  body main .quizSection .quizContainer .answerContainer {
+    padding: 2vh;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 480px) {
+  body main #topNav {
+    margin: 0 2vh;
+    right: -110%;
+  }
+  body main #topNav .backToMain img {
+    width: 15vh;
+  }
+  body main #topNav ul {
+    margin: 0 5vh;
+  }
+  body main #topNav.active {
+    right: -60%;
+  }
+  body main .quizSection {
+    margin: 15vh 0;
+  }
+  body main .quizSection .quizContainer {
+    width: 95%;
+  }
+  body main .footerContainer .botNav .botNavContainer {
+    width: 70%;
+  }
+  body main .footerContainer .botNav .botNavContainer .programme {
+    display: none;
+  }
 }/*# sourceMappingURL=quiz.css.map */
